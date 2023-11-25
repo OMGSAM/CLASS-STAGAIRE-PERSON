@@ -1,0 +1,25 @@
+print("Hello world")
+class person() :
+    def __init__(self,nm,ag) :
+        self.nom= nm
+        self.age= ag
+    def info(self) :
+        print(" le nom est : " , self.nom)
+        print(" le age est : " , self.age)
+class STAGAIRE(person) : 
+    def __init__(self,nm,ag,no) :
+      person.__init__(self,nm,ag)
+      self.note=no
+       
+
+class prof(person) :  
+    def __init__(self,nm,ag, sal) :
+        person.__init__(self,nm,ag)
+        self.salaire=sal
+         
+STAGAIRE1= STAGAIRE("BOUJAMAA",19,1)         
+print(STAGAIRE1.nom)
+prof1 = prof("JILALI",99,96)
+print(prof1.salaire)
+STAGAIRE9= STAGAIRE("NABIL",25,5)         
+print(STAGAIRE3.note)
